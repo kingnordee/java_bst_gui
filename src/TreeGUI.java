@@ -193,7 +193,6 @@ public class TreeGUI extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				//USE TRY CATCH HERE
-				//missing code to be filled in by you
 				String _input = input_elem_text2.getText(); //WOULDN'T RAISE EXCEPTION; WORST CASE IT RETURNS EMPTY STRING
 				boolean _action = false;
 
@@ -228,7 +227,6 @@ public class TreeGUI extends JFrame {
 		undoButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-			// missing code to be filled in by you
 				AbsTree prevState;
 				try{
 					prevState = tm.get_state();
@@ -256,9 +254,7 @@ public class TreeGUI extends JFrame {
 	}
 }
 
-// **************** The OutputPanel class *************************
-//		    (no changes required)
-
+// **************** OutputPanel class *************************
 // The output area, where the tree is drawn
 class OutputPanel extends Panel {
 	private static final long serialVersionUID = 1L;
@@ -315,7 +311,6 @@ class OutputPanel extends Panel {
 }
 
 //**************** The TreeMemento class *************************
-//		   (to be coded by you)
 
 class TreeMemento {
 	private Stack<AbsTree> state = new Stack<AbsTree>();
@@ -342,7 +337,7 @@ class TreeMemento {
 }
 
 // *********************************************************
-//  Binary Search Tree (of integers) with Duplicates in Java
+//  Binary Search Tree (of integers) with Duplicates
 // *********************************************************
 
 abstract class AbsTree implements Cloneable {
